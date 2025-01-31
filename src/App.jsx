@@ -7,7 +7,7 @@ const App = () => {
     <div className="flex justify-center items-center h-screen bg-[#f2f2f2]">
       <div className="bg-white p-6 rounded-3xl shadow-2xl w-full max-w-[400px] ">
         {/* Header Section */}
-        <div className="bg-[#0081FB] text-white p-4 rounded-xl text-center relative">
+        <div className="bg-[#0081FB] text-white p-4 rounded-xl text-start relative">
           <h2 className="text-xl font-bold">Welcome,</h2>
           <p className="text-md font-medium mt-1">You Are Valuable to Us</p>
           <p className="text-sm mt-1 opacity-80">
