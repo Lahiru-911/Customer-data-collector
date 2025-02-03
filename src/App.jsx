@@ -5,7 +5,8 @@ const App = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-[#f2f2f2]">
-      <div className="bg-white p-5 rounded-2xl shadow-2xl w-full max-w-[500px]">
+      <div className="bg-white p-5 rounded-2xl shadow-2xl w-full max-w-[500px] ">
+        {/* Header Section */}
         {/* Header Section */}
         <div className="bg-[#0081FB] text-white p-4 rounded-xl text-start relative flex justify-between items-center">
           <div>
@@ -15,10 +16,10 @@ const App = () => {
               Please provide your details below
             </p>
           </div>
-          <img 
-            src="/logo.png" 
-            alt="Logo" 
-            className="w-12 h-12 object-contain" 
+          <img
+            src="/src/assets/logo.png"
+            alt="Logo"
+            className="w-12 h-12 object-contain"
           />
         </div>
 
@@ -54,14 +55,14 @@ const App = () => {
           ))}
 
           {/* Rating Section */}
-          <div className="text-gray-600 text-center mt-3 font-medium">
+          <div className="text-gray-600 text-start mt-3 font-medium">
             Rate Our Service:
           </div>
-          <div className="flex justify-center space-x-1">
+          <div className="flex justify-start space-x-2">
             {[1, 2, 3, 4, 5].map((num) => (
               <span
                 key={num}
-                className={`cursor-pointer text-2xl transition-all duration-200 ${
+                className={`cursor-pointer text-3xl transition-all duration-200 ${
                   rating >= num ? "text-yellow-400 scale-110" : "text-gray-300"
                 }`}
                 onClick={() => setRating(num)}
@@ -72,12 +73,8 @@ const App = () => {
           </div>
 
           {/* Submit Button */}
-          <button className="w-full bg-[#0081FB] hover:bg-[#0074E2] text-white py-2 rounded-md mt-4 text-md font-semibold hover:opacity-90 transition-all">
-            Submit 🚀
-          </button>
-
-          <button className="px-5 py-2 w-full bg-transparent items-center justify-center flex border-2 border-sky-500 shadow-lg hover:bg-sky-500 text-sky-500 hover:text-white duration-300 cursor-pointer active:scale-[0.98]">
-            <a className href="#">Submit</a>
+          <button className=" mt-4 py-2 w-full bg-transparent items-center justify-center flex border-2 border-[#0081FB] shadow-lg hover:bg-[#0081FB] text-[#0081FB] hover:text-white duration-300 cursor-pointer active:scale-[0.98] rounded-lg text-md">
+            Submit
           </button>
         </form>
       </div>
@@ -86,8 +83,6 @@ const App = () => {
 };
 
 export default App;
-
-
 
 // #f4eeff
 
