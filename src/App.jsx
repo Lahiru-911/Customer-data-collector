@@ -39,7 +39,7 @@ const App = () => {
               </label>
               <input
                 required
-                className="w-full h-10 bg-[#F2F2F2] text-sm placeholder-slate-400 border border-slate-300 rounded-md outline-none px-3 focus:ring-1 focus:border-indigo-400 focus:ring-indigo-400"
+                className="w-full h-10 bg-[#F2F2F2] text-sm placeholder-slate-400 border border-slate-300 rounded-xl outline-none px-3 focus:ring-1 focus:border-[#0081FB] focus:ring-indigo-400"
                 placeholder={placeholder}
                 type={type}
               />
@@ -65,7 +65,7 @@ const App = () => {
           </div>
 
           {/* Submit Button */}
-          <button className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-2 rounded-md mt-4 text-md font-semibold hover:opacity-90 transition-all">
+          <button className="w-full bg-[#0081FB] hover:bg-[#0074E2] text-white py-2 rounded-md mt-4 text-md font-semibold hover:opacity-90 transition-all">
             Submit 🚀
           </button>
         
