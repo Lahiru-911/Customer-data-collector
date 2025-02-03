@@ -5,12 +5,12 @@ const App = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-[#f2f2f2]">
-      <div className="bg-white p-6 rounded-3xl shadow-2xl w-full max-w-[400px] ">
+      <div className="bg-white p-5 rounded-2xl shadow-2xl w-full max-w-[500px] ">
         {/* Header Section */}
         <div className="bg-[#0081FB] text-white p-4 rounded-xl text-start relative">
-          <h2 className="text-xl font-bold">Welcome,</h2>
-          <p className="text-md font-medium mt-1">You Are Valuable to Us</p>
-          <p className="text-sm mt-1 opacity-80">
+          <h2 className="text-2xl font-normal">Welcome,</h2>
+          <p className="text-md font-normal mt-1">You Are Royal to Us</p>
+          <p className="text-sm mt-1 text-[#E5E7EB]">
             Please provide your details below
           </p>
         </div>
