@@ -5,14 +5,21 @@ const App = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-[#f2f2f2]">
-      <div className="bg-white p-5 rounded-2xl shadow-2xl w-full max-w-[500px] ">
+      <div className="bg-white p-5 rounded-2xl shadow-2xl w-full max-w-[500px]">
         {/* Header Section */}
-        <div className="bg-[#0081FB] text-white p-4 rounded-xl text-start relative">
-          <h2 className="text-2xl font-normal">Welcome,</h2>
-          <p className="text-md font-normal mt-1">You Are Royal to Us</p>
-          <p className="text-sm mt-1 text-[#E5E7EB]">
-            Please provide your details below
-          </p>
+        <div className="bg-[#0081FB] text-white p-4 rounded-xl text-start relative flex justify-between items-center">
+          <div>
+            <h2 className="text-2xl font-normal">Welcome,</h2>
+            <p className="text-md font-normal mt-1">You Are Royal to Us</p>
+            <p className="text-sm mt-1 text-[#E5E7EB]">
+              Please provide your details below
+            </p>
+          </div>
+          <img 
+            src="/logo.png" 
+            alt="Logo" 
+            className="w-12 h-12 object-contain" 
+          />
         </div>
 
         {/* Form Section */}
@@ -68,24 +75,18 @@ const App = () => {
           <button className="w-full bg-[#0081FB] hover:bg-[#0074E2] text-white py-2 rounded-md mt-4 text-md font-semibold hover:opacity-90 transition-all">
             Submit 🚀
           </button>
-        
-            <button className="px-5 py-2 w-full bg-transparent items-center justify-center flex border-2 border-sky-500 shadow-lg hover:bg-sky-500 text-sky-500 hover:text-white duration-300 cursor-pointer active:scale-[0.98]">
-              <a className href>
-              Submit
-              </a>
-            </button>
-          
+
+          <button className="px-5 py-2 w-full bg-transparent items-center justify-center flex border-2 border-sky-500 shadow-lg hover:bg-sky-500 text-sky-500 hover:text-white duration-300 cursor-pointer active:scale-[0.98]">
+            <a className href="#">Submit</a>
+          </button>
         </form>
       </div>
-
-
-
-      
     </div>
   );
 };
 
 export default App;
+
 
 
 // #f4eeff
